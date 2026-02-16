@@ -15,19 +15,23 @@
       background: #f0f0f0;
       gap: 10px;
     }
-    a.ar-button {
-      padding: 12px 24px;
-      font-size: 18px;
-      background-color: #007aff;
+    model-viewer::part(ar-button) {
+      background-color: #FF2400;
       color: white;
-      text-decoration: none;
       border-radius: 8px;
+      padding: 12px 24px;
+      font-size: 18px
     }
   </style>
 </head>
 <body>
-  <a class="ar-button" rel="ar" href="chinese iron podium success.glb">
-    View in AR
-  </a>
+  <model-viewer 
+    src="chinese iron podium success.glb"
+    ios-src="chinese iron podium success.usdz"
+    ar
+    ar-modes="scene-viewer quick-look"
+    camera-controls
+    auto-rotate>
+  </model-viewer>
 </body>
 </html>
