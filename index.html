@@ -19,19 +19,23 @@
       gap: 10px;
     }
     model-viewer {
-      width:250vw;
-      height: 250vh;
+      width: 100vw;
+      height: 100vh;
     }
     model-viewer::part(ar-button) {
       position: absolute;
-      top: 75%;
+      top: 85%;
       left: 50%;
+      transform: translate(-50%, -50%);
       
       background-color: #FF2400;
       color: white;
       border-radius: 8px;
       padding: 12px 24px;
-      font-size: 18px
+      font-size: 18px;
+      border: none;
+      cursore: pointer;
+      z-index: 999;
     }
   </style>
 </head>
